@@ -1,0 +1,5 @@
+postgresql-9.1
+libpq-dev
+nginx
+build-essential
+python-dev
