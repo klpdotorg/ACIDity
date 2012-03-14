@@ -27,7 +27,7 @@ $ source ~/envs/proto/bin/activate
 $ python bin/coredb.py init     # Fix this so it actually works
 </pre>
 1. Run your shiny testcases with code coverage
-</pre>
+<pre>
 $ cd tests
 $ py.test --cov=..
 </pre>
