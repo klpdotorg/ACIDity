@@ -2,7 +2,6 @@
 import os
 import sys
 import datetime
-from logbook import Logger
 
 from sqlalchemy import create_engine, Table, Column, MetaData, ForeignKey, Index, UniqueConstraint, func
 from sqlalchemy.sql import select, and_, or_, not_, exists
@@ -13,8 +12,9 @@ from sqlalchemy.orm.session import Session
 from sqlalchemy.ext.declarative import declarative_base, declared_attr
 
 import common.config as config
+from common.log import logger
 
-log = Logger("db")
+log = logger("db")
 
 class DBObject(object):
     """
